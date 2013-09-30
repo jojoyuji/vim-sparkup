@@ -110,7 +110,7 @@ class HtmlDialect(Dialect):
                 "</html>"},
         "button": {
             "name": "button",
-            "attributes": { "class": "button", "type": "button", "name": "", "value": "" }
+            "attributes": { "class": "button", "type": "button"}
             },
         "input:button": {
             "name": "input",
