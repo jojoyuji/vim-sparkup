@@ -28,7 +28,8 @@ class HtmlDialect(Dialect):
             "opening_tag": "<!--[if lte IE 7]>",
             "closing_tag": "<![endif]-->"},
         "cc:noie": {
-            "opening_tag": "<!--[if !IE]><!-->",
+          "opening_tag":
+"<!--[if !IE]><!-->",
             "closing_tag": "<!--<![endif]-->"},
         "html:4t": {
             "expand": True,
@@ -824,7 +825,7 @@ class Token:
 
         # Get the tag name. Default to DIV if none given.
         name = re.findall("^([\w\-:]*)", self.str)[0]
-        name = name.lower().replace("-", ":")
+        #name = name.lower().replace("-", ":")
 
         # Find synonyms through this thesaurus
         synonyms = self.parser.dialect.synonyms
